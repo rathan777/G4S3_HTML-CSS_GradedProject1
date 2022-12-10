@@ -1,0 +1,147 @@
+body {
+    height: auto;
+    margin: 0%;
+}
+
+h1 {
+    padding: 20px;
+    background-color: rgb(70, 69, 69);
+    text-align: center;
+    font-size: 30px;
+    margin: 0px auto;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+h5 {
+    padding: 20px;
+    background-color: rgb(20, 19, 19);
+    text-align: center;
+    color: whitesmoke;
+}
+
+li {
+    color: rgb(140, 140, 218);
+}
+
+.NAV {
+    margin: 0%;
+    background-color: rgba(86, 84, 84, 0.5);
+    height: 40px;
+    width: 100%;
+}
+
+.NAV li {
+    display: inline-block;
+    line-height: 40px;
+    margin: 0px 12px;
+    border-radius: 4px;
+}
+
+.NAV li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.NAV li:hover {
+    background-color: rgb(169, 84, 169);
+}
+
+.NAV li:nth-child(2):hover #NAV1,
+.NAV li:nth-child(3):hover #NAV2 {
+    display: block;
+}
+
+#NAV1,
+#NAV2 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(156, 153, 153, 0.2);
+    z-index: 1;
+}
+
+#NAV1 li,
+#NAV2 li {
+    display: block;
+}
+
+#slider {
+    width: 1000px;
+    height: 400px;
+    margin: 0px;
+    border: 2px solid blue;
+    background-repeat: no-repeat;
+    animation-name: slide;
+    animation-duration: 25s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0%{
+        background-image: url('./Images/Animation/ani1.jpg')
+    }
+    25% {
+        background-image: url('./Images/Animation/ani2.png')
+    }
+
+    50% {
+        background-image: url('./Images/Animation/ani3.jpg')
+    }
+
+    75% {
+        background-image: url('./Images/Animation/ani4.jpg')
+    }
+
+    100% {
+        background-image: url('./Images/Animation/ani5.jpg')
+    }
+
+}
+
+.product_section {
+    margin: 20px 0% 30px 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.product {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(221, 227, 241);
+    flex-wrap: nowrap;
+    text-decoration-color: rgb(190, 227, 239);
+    box-shadow: 0 5px 10px 0 grey, 0 5px 10px 0 rgb(185, 182, 182);
+}
+
+.product:hover {
+    padding: 20px;
+}
+
+.product img {
+    width: 300px;
+    height: 200px;
+}
+
+.product button {
+    width: 100%;
+    padding: 5px;
+    background-color: whitesmoke;
+    border: solid rgb(214, 178, 178) 1px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.product button:active {
+    background-color: rgb(250, 234, 230);
+    border: solid rgb(0, 255, 76) 1px;
+    border-radius: 8px;
+    color: rgb(0, 255, 76);
+    font-weight: bold;
+}
